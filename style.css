@@ -16,6 +16,30 @@ body {
     margin: 0;
 }
 
+#profile-photo
+{
+    width: 20%;
+    height: 20%;
+    border: 6px solid #fef8f7;
+    border-radius: 10px;
+}
+
+.header-container
+{
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center; 
+}
+
+.header-text
+{
+    font-size: 1.8em; 
+    /*background-color: #fef8f7;
+    color: #333;
+    padding: 3em; 
+    border-radius: 10px; */
+}
+
 /* Container */
 .container {
     width: 90%;
@@ -26,7 +50,7 @@ body {
 
 /* Header Styling */
 header {
-    background-color: #007acc;
+    background-image: url(header_background.jpg);
     color: #fff;
     padding: 60px 0;
     text-align: center;
@@ -83,6 +107,7 @@ nav a:hover {
 .about h2 {
     font-size: 2em;
     margin-bottom: 10px;
+
 }
 
 .about p {
