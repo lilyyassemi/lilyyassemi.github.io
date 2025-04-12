@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lily Yassemi - Online CV</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./resources/css/style.css">
     <!-- Google Fonts for Font Styles -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
@@ -13,12 +13,12 @@
 
     <!-- Header Section -->
     <header>
-        <div class="header-container">
-                <img src="lilyphoto.jpg" alt="Photo of Lily Yassemi" id="profile-photo"/>
+        <div class="header-container"> 
             <div class="header-text">
                 <h1>Lily Yassemi</h1>
-                <p>Web Developer | Leader | Creator</p>
+                <p>Web Developer ◆ Leader ◆ Creator</p>
             </div>
+            <img src="./resources/images/lilyphoto.jpg" alt="Photo of Lily Yassemi" id="profile-photo"/>
         </div>
     </header>
 
@@ -26,16 +26,14 @@
     <nav>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="#organizations">Organizations</a>
     </nav>
 
     <!-- About Section -->
     <section class="about" id="about">
         <div class="container">
             <div class="about-text">
-                <h2>About Me</h2>
-
-                <h3>👋 Hi, I'm Lily! </h3>
+                <h2>👋 Hi, I'm Lily!</h2>
                 <p> I'm a senior at Cal Poly Humboldt studying Computer Science. 
 
                     I'm also the President of the Computer Science Club and recently founded the Society of Women in STEM Humboldt 
@@ -49,6 +47,20 @@
                     💡 Fun Fact About Me: I'm a radio DJ and the website manager at Cal Poly Humboldt's student run radio station KRFH 
                                            where I've been mixing my love for music, creativity, and technology for over three years!
                 </p>
+                <div class="about-image-gallery">
+                    <div class="gallery-wrapper">
+                        <!--<div class="arrow left" onclick="scrollGallery(-1)">&LeftAngleBracket;</div>
+                        <div class="arrow right" onclick="scrollGallery(1)">&RightAngleBracket;</div>-->
+                      
+                        <div class="gallery" id="gallery">
+                          <img src="./resources/images/about-images/lily_belgium.jpg" alt="1">
+                          <img src="./resources/images/about-images/lily_dj.png" alt="2">
+                          <img src="./resources/images/about-images/lily_sarah.jpg" alt="3">
+                          <img src="./resources/images/about-images/lily_icpc.jpg" alt="4">
+                        </div>
+                      </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -58,23 +70,71 @@
         <div class="container">
             <h2>Projects</h2>
             <p>Check out some of my recent projects below.</p>
+
+            <div class="project-gallery">
+                
+                <a class="project-link" href="https://github.com/XXLZopes/hackathon24" target="_blank">
+                    <div class="project-card">
+                        <img class="project-img" src="./resources/images/project-images/study_squad.png" alt="Study Squad Cover Image">
+                        <p>Study Squad</p>
+                    </div>
+                </a>
+
+                <a class="project-link" href="https://github.com/lilyyassemi/geoAlign" target="_blank">
+                    <div class="project-card">
+                        <img class="project-img" src="./resources/images/project-images/geo_align.png" alt="GeoAlign Cover Image">
+                        <p>GeoAlign Software</p>
+                    </div>
+                </a>
+
+                <a class="project-link" href="https://github.com/lilyyassemi/BangingChains" target="_blank">
+                    <div class="project-card">
+                        <img class="project-img" src="./resources/images/project-images/banging_chains.png" alt="Banging Chains Cover Image">
+                        <p>Banging Chains</p>
+                    </div>
+                </a>
+
+            </div>
+
             <!-- Projects items can be added here -->
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
+    <!-- Organizations Section -->
+    <section class="organizations" id="organizations">
         <div class="container">
-            <h2>Contact Me</h2>
-            <p>If you have any questions, feel free to reach out!</p>
-            <p>Email: smilegiver15@gmail.com</p>
+            <h2>Academic Organizations</h2>
+
+            <div class="organization-gallery">
+                <a class="organizations-link" href="https://csclubhumboldt.org" target="_blank">
+                    <div class="organization-card">
+                        <img class="organization-img" src="./resources/images/organization-images/csclublogoforpage.png" alt="Computer Science Club Humboldt">
+                        <p>Computer Science Club</p>
+                        <p><em>Role: President</em></p>
+                    </div>
+                </a>
+    
+                <a class="organizations-link" href="https://swishumboldt.github.io/" target="_blank">
+                    <div class="organization-card">
+                        <img class="organization-img" src="./resources/images/organization-images/swislogoforpage.png" alt="SWIS Logo">
+                        <p>Society of Women in STEM Humboldt</p>
+                        <p><em>Role: Founder & President</em></p>
+                    </div>
+                </a>
+            </div>
         </div>
     </section>
 
+
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Lily Yassemi. All Rights Reserved.</p>
+        <div class="footer-card">
+            <a href="mailto:smilegiver15@gmail.com">Contact Me</a>
+        </div>
+        <p>&copy; 2025 Lily Yassemi. All Rights Reserved.</p>
     </footer>
+
+
 
 </body>
 </html>
